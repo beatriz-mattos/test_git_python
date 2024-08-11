@@ -15,5 +15,8 @@ df = pd.DataFrame({
 
 @app.route('/table')
 def table():
-    # Converte o dataframe para html e passa como parâmetro para o template table
-    return render_template('table.html', table=df.to_html(classes='table table-custom'))
+    # Ordena o dataframe pela coluna 'notas' em ordem decrescente
+    sorted_df = df.sort_values(by='notas', ascending=False)
+
+    # Converte o dataframe ordenado para html e passa como parâmetro para o template table
+    return render_template('table.html', table=sorted_df.to_html(classes='table table-custom'))
