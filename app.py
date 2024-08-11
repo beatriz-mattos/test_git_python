@@ -16,4 +16,4 @@ df = pd.DataFrame({
 @app.route('/table')
 def table():
     # Converte o dataframe para html e passa como parâmetro para o template table
-    return render_template('table.html', table=df.to_html(classes='table'))
+    return render_template('table.html', table=df.to_html(classes='table table-custom'))
