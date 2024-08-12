@@ -3,9 +3,10 @@ Este é um projeto simples em HTML, CSS, Python, Flask e pandas, com a finalidad
 
 ## Como executar o aplicativo
 Para executar o aplicativo, siga estes passos:
-1. Instale as dependências
+1. Navegue até app e instale as dependências
 Certifique-se de que as dependências estão instaladas. Se você estiver usando um ambiente virtual, ative-o e execute:
 ```
+cd app/
 pip install -r requirements.txt
 ```
 
